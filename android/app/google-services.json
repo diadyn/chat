@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "394620499758",
+    "firebase_url": "https://diadynchat.firebaseio.com",
+    "project_id": "diadynchat",
+    "storage_bucket": "diadynchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394620499758:android:e94bdbbe663f27e4366cbf",
+        "android_client_info": {
+          "package_name": "com.diadyn.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394620499758-d4n6bhiki2715ckg3orrgvg0d298un54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoElih2HYcqnr3Oe2-97Et1hT2Npqd9sE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394620499758-d4n6bhiki2715ckg3orrgvg0d298un54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
