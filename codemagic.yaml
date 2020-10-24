@@ -1,17 +1,9 @@
-# Check out https://docs.codemagic.io/getting-started/yaml/ for more information
-# Please review and update values in curly braces
+# Check out https://docs.codemagic.io/getting-started/building-a-native-android-app/ for more information
 
 workflows:
-    android-flutter:
-        name: Android App with Flutter Module
-        environment:
-            vars:
-                FLUTTER_MODULE_DIR: "C:\run\flutter"
-                HOST_ANDROID_APP_DIR: "C:\Program Files\Android\Android Studio\bin"
-            flutter: stable
+    android-app:
+        name: Android App
         scripts:
-            - echo "sdk.dir=$HOME/programs/android-sdk-macosx" > "$FCI_BUILD_DIR/$HOST_ANDROID_APP_DIR/local.properties"
-            - cd $FLUTTER_MODULE_DIR && flutter pub get
-            - cd $HOST_ANDROID_APP_DIR && ./gradlew assembleDebug
+            - ./gradlew assembleDebug
         artifacts:
-            - $HOST_ANDROID_APP_DIR/app/build/outputs/**/*.apk
+            - app/build/outputs/**/*.apk
